@@ -1,7 +1,7 @@
 {
   "id": "CVE-2019-10789",
   "dependencies": {
-    "curling": "0.2.0"
+    "curling": "1.0.0"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-CURLING-546484",
