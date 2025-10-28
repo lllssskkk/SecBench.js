@@ -1,0 +1,22 @@
+Usage: apic {{plugins:install}} PLUGIN
+
+Installs a plugin into the apic command line utility.
+PLUGIN may be one of the following:
+
+Install via tarball archive -- a {{.tgz}} file whose contents are an {{npm}} package:
+{{$ apic plugins:install my-plugin-v1.0.0.tgz}}
+  /var/folders/p_/hrr_clx54431npnrdl11fggc0000gn/T/0.45662643294781446-1468622107605/lib
+  +-- my-plugin@1.0.0
+
+Install via directory path -- an on-disk path to a folder with an {{npm}} package:
+{{$ apic plugins:install path/to/my-plugin}}
+  /var/folders/p_/hrr_clx54431npnrdl11fggc0000gn/T/0.45662643294781446-1468622107605/lib
+  +-- my-plugin@1.0.0
+
+Install via npm registry (default) -- a package name that will be retrieved from the default {{npm}} registry ({{npm config get registry}}):
+{{$ apic plugins:install my-plugin}}
+  /var/folders/p_/hrr_clx54431npnrdl11fggc0000gn/T/0.45662643294781446-1468622107605/lib
+  +-- my-plugin@1.0.0
+
+After doing this you can run `apic {{plugins:list}}` to see if your plugin has been
+installed.

@@ -1,0 +1,465 @@
+---
+queries:
+ -
+  pack: clientside-prototype-pollution#0
+  relativeQueryPath: OldUnsafeCommandLineConstruction.ql
+  relativeBqrsPath: clientside-prototype-pollution/OldUnsafeCommandLineConstruction.bqrs
+  metadata:
+    name: Old Unsafe Command Line Construction
+    kind: path-problem
+    problem.severity: warning
+    precision: high
+    id: js/command-injection
+    tags: security
+extensionPacks: []
+packs:
+  codeql/javascript-all#1:
+    name: codeql/javascript-all
+    version: 2.6.1
+    isLibrary: true
+    isExtensionPack: false
+    localPath: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/
+    localPackDefinitionFile: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/qlpack.yml
+    headSha: 2409bcc0d62644acbc432900bc59c2e3ff33bd56
+    runDataExtensions: []
+  codeql/threat-models#2:
+    name: codeql/threat-models
+    version: 1.0.21
+    isLibrary: true
+    isExtensionPack: false
+    localPath: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/
+    localPackDefinitionFile: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/qlpack.yml
+    headSha: 2409bcc0d62644acbc432900bc59c2e3ff33bd56
+    runDataExtensions: []
+  clientside-prototype-pollution#0:
+    name: clientside-prototype-pollution
+    version: 0.0.0
+    isLibrary: false
+    isExtensionPack: false
+    localPath: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/CWE078/UnsafeCommandLineConstruction.ql/
+    localPackDefinitionFile: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/CWE078/UnsafeCommandLineConstruction.ql/qlpack.yml
+    headSha: 59daf5bc6861861206f088d196fff9c3b8fa4521
+    runDataExtensions:
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/apollo-server.model.yml
+      index: 0
+      firstRowId: 0
+      rowCount: 1
+      locations:
+        lineNumbers: A=6
+        columnNumbers: A=9
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/apollo-server.model.yml
+      index: 1
+      firstRowId: 1
+      rowCount: 4
+      locations:
+        lineNumbers: A=12+1*3
+        columnNumbers: A=9*4
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/axios.model.yml
+      index: 0
+      firstRowId: 5
+      rowCount: 1
+      locations:
+        lineNumbers: A=6
+        columnNumbers: A=9
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/axios.model.yml
+      index: 1
+      firstRowId: 6
+      rowCount: 1
+      locations:
+        lineNumbers: A=12
+        columnNumbers: A=9
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/default-threat-models-fixup.model.yml
+      index: 0
+      firstRowId: 7
+      rowCount: 1
+      locations:
+        lineNumbers: A=8
+        columnNumbers: A=9
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/hana-db-client.model.yml
+      index: 0
+      firstRowId: 8
+      rowCount: 4
+      locations:
+        lineNumbers: A=6+1*3
+        columnNumbers: A=9*4
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/hana-db-client.model.yml
+      index: 1
+      firstRowId: 12
+      rowCount: 2
+      locations:
+        lineNumbers: A=15+1
+        columnNumbers: A=9*2
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/hana-db-client.model.yml
+      index: 2
+      firstRowId: 14
+      rowCount: 6
+      locations:
+        lineNumbers: A=22+1*5
+        columnNumbers: A=9*6
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/make-dir.model.yml
+      index: 0
+      firstRowId: 20
+      rowCount: 1
+      locations:
+        lineNumbers: A=6
+        columnNumbers: A=9
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/markdown-table.model.yml
+      index: 0
+      firstRowId: 21
+      rowCount: 1
+      locations:
+        lineNumbers: A=6
+        columnNumbers: A=9
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/mkdirp.model.yml
+      index: 0
+      firstRowId: 22
+      rowCount: 2
+      locations:
+        lineNumbers: A=6+1
+        columnNumbers: A=9*2
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/open.model.yml
+      index: 0
+      firstRowId: 24
+      rowCount: 2
+      locations:
+        lineNumbers: A=6+1
+        columnNumbers: A=9*2
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/react-relay-threat.model.yml
+      index: 0
+      firstRowId: 26
+      rowCount: 10
+      locations:
+        lineNumbers: A=6+1*9
+        columnNumbers: A=9*10
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/rimraf.model.yml
+      index: 0
+      firstRowId: 36
+      rowCount: 3
+      locations:
+        lineNumbers: A=6+1*2
+        columnNumbers: A=9*3
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/tanstack.model.yml
+      index: 0
+      firstRowId: 39
+      rowCount: 6
+      locations:
+        lineNumbers: A=6+1*5
+        columnNumbers: A=9*6
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/underscore.string.model.yml
+      index: 0
+      firstRowId: 45
+      rowCount: 5
+      locations:
+        lineNumbers: A=6+1*4
+        columnNumbers: A=9*5
+     -
+      pack: codeql/javascript-all#1
+      relativePath: ext/underscore.string.model.yml
+      index: 1
+      firstRowId: 50
+      rowCount: 20
+      locations:
+        lineNumbers: A=16+1*19
+        columnNumbers: A=9*20
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/NoSQL.model.yml
+      index: 0
+      firstRowId: 70
+      rowCount: 4
+      locations:
+        lineNumbers: A=8+3+1*2
+        columnNumbers: A=9*4
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/NodeJSLib.model.yml
+      index: 0
+      firstRowId: 74
+      rowCount: 5
+      locations:
+        lineNumbers: A=6+1*4
+        columnNumbers: A=9*5
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/SQL.model.yml
+      index: 0
+      firstRowId: 79
+      rowCount: 5
+      locations:
+        lineNumbers: A=6+1*4
+        columnNumbers: A=9*5
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/SQL.model.yml
+      index: 1
+      firstRowId: 84
+      rowCount: 4
+      locations:
+        lineNumbers: A=16+1*3
+        columnNumbers: A=9*4
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/helmet/Helmet.Required.Setting.model.yml
+      index: 0
+      firstRowId: 88
+      rowCount: 2
+      locations:
+        lineNumbers: A=6+1
+        columnNumbers: A=9*2
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/minimongo/model.yml
+      index: 0
+      firstRowId: 90
+      rowCount: 75
+      locations:
+        lineNumbers: A=6+1*74
+        columnNumbers: A=9*75
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/mongodb/model.yml
+      index: 0
+      firstRowId: 165
+      rowCount: 26
+      locations:
+        lineNumbers: A=6+1*25
+        columnNumbers: A=9*26
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/mongodb/model.yml
+      index: 1
+      firstRowId: 191
+      rowCount: 611
+      locations:
+        lineNumbers: A=37+1*610
+        columnNumbers: A=9*611
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/mongodb/model.yml
+      index: 2
+      firstRowId: 802
+      rowCount: 32
+      locations:
+        lineNumbers: A=653+1*31
+        columnNumbers: A=9*32
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/mongodb/model.yml
+      index: 3
+      firstRowId: 834
+      rowCount: 102
+      locations:
+        lineNumbers: A=690+1*101
+        columnNumbers: A=9*102
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/mssql/model.yml
+      index: 0
+      firstRowId: 936
+      rowCount: 34
+      locations:
+        lineNumbers: A=6+1*33
+        columnNumbers: A=9*34
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/mysql/model.yml
+      index: 0
+      firstRowId: 970
+      rowCount: 57
+      locations:
+        lineNumbers: A=6+1*56
+        columnNumbers: A=9*57
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/mysql/model.yml
+      index: 1
+      firstRowId: 1027
+      rowCount: 3
+      locations:
+        lineNumbers: A=68+1*2
+        columnNumbers: A=9*3
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/pg/model.yml
+      index: 0
+      firstRowId: 1030
+      rowCount: 65
+      locations:
+        lineNumbers: A=6+1*64
+        columnNumbers: A=9*65
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/pg/model.yml
+      index: 1
+      firstRowId: 1095
+      rowCount: 5
+      locations:
+        lineNumbers: A=76+1*4
+        columnNumbers: A=9*5
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/pg/model.yml
+      index: 2
+      firstRowId: 1100
+      rowCount: 23
+      locations:
+        lineNumbers: A=86+1*22
+        columnNumbers: A=9*23
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/sequelize/model.yml
+      index: 0
+      firstRowId: 1123
+      rowCount: 7
+      locations:
+        lineNumbers: A=6+1*6
+        columnNumbers: A=9*7
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/sequelize/model.yml
+      index: 1
+      firstRowId: 1130
+      rowCount: 248
+      locations:
+        lineNumbers: A=18+1*247
+        columnNumbers: A=9*248
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/sequelize/model.yml
+      index: 2
+      firstRowId: 1378
+      rowCount: 5
+      locations:
+        lineNumbers: A=271+1*4
+        columnNumbers: A=9*5
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/sequelize/model.yml
+      index: 3
+      firstRowId: 1383
+      rowCount: 2
+      locations:
+        lineNumbers: A=281+1
+        columnNumbers: A=9*2
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/spanner/model.yml
+      index: 0
+      firstRowId: 1385
+      rowCount: 174
+      locations:
+        lineNumbers: A=6+1*173
+        columnNumbers: A=9*174
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/spanner/model.yml
+      index: 1
+      firstRowId: 1559
+      rowCount: 5
+      locations:
+        lineNumbers: A=185+1*4
+        columnNumbers: A=9*5
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/sqlite3/model.yml
+      index: 0
+      firstRowId: 1564
+      rowCount: 15
+      locations:
+        lineNumbers: A=6+1*14
+        columnNumbers: A=9*15
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/frameworks/sqlite3/model.yml
+      index: 1
+      firstRowId: 1579
+      rowCount: 3
+      locations:
+        lineNumbers: A=26+1*2
+        columnNumbers: A=9*3
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/security/domains/IntegrityCheckingRequired/integrity_checking_required.model.yml
+      index: 0
+      firstRowId: 1582
+      rowCount: 3
+      locations:
+        lineNumbers: A=6+1*2
+        columnNumbers: A=9*3
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/security/domains/compromised/compromised_domains.model.yml
+      index: 0
+      firstRowId: 1585
+      rowCount: 1
+      locations:
+        lineNumbers: A=6
+        columnNumbers: A=9
+     -
+      pack: codeql/javascript-all#1
+      relativePath: semmle/javascript/security/domains/untrusted/untrusted_domains.model.yml
+      index: 0
+      firstRowId: 1586
+      rowCount: 6
+      locations:
+        lineNumbers: A=7+1+3+1*3
+        columnNumbers: A=9*6
+     -
+      pack: codeql/threat-models#2
+      relativePath: ext/supported-threat-models.model.yml
+      index: 0
+      firstRowId: 1592
+      rowCount: 1
+      locations:
+        lineNumbers: A=6
+        columnNumbers: A=9
+     -
+      pack: codeql/threat-models#2
+      relativePath: ext/threat-model-grouping.model.yml
+      index: 0
+      firstRowId: 1593
+      rowCount: 15
+      locations:
+        lineNumbers: A=8+3+1+3+1*5+3+1+5+1*3
+        columnNumbers: A=9*15
+  codeql/util#3:
+    name: codeql/util
+    version: 2.0.8
+    isLibrary: true
+    isExtensionPack: false
+    localPath: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/util/
+    localPackDefinitionFile: file:///home/lllssskkk/code/differentialAnalysis/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/util/qlpack.yml
+    headSha: 2409bcc0d62644acbc432900bc59c2e3ff33bd56
+    runDataExtensions: []

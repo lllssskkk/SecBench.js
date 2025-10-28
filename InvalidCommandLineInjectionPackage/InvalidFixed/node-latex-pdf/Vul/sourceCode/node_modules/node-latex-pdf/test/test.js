@@ -1,0 +1,24 @@
+const fs = require('fs')
+
+// using self defined module
+const selflatex = require('../node-latex-pdf');
+
+// document testing 
+selflatex(__dirname + '/src/document.tex', __dirname + '/dest/', (err,msg) => {
+    console.log(msg);
+});
+
+// image testing
+selflatex(__dirname + '/src/image.tex', __dirname + '/dest/', (err,msg) => {
+    console.log(msg);
+});
+
+// reference testing 
+selflatex(__dirname + '/src/reference.tex', __dirname + '/dest/', (err,msg) => {
+    console.log(msg);
+});
+
+// image-node testing (different kind of image usage) 
+selflatex(__dirname + '/src/image-node.tex', __dirname + '/dest/', (err,msg) => {
+    console.log(msg);
+});
