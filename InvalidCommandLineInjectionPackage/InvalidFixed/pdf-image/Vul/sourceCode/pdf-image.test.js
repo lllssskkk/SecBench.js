@@ -1,8 +1,8 @@
-test("Remote code execution in pdf-image", () => {
+test("Command Injection in pdf-image", () => {
   expect.assertions(2);
-  var PDFImage = require("pdf-image").PDFImage;
+  const PDFImage = require("pdf-image").PDFImage;
   const fs = require("fs");
-  const path = "./pdf-image_2";
+  const path = "./pdf-image";
   try {
     if (fs.existsSync(path)) {
       fs.unlinkSync(path);
@@ -13,14 +13,12 @@ test("Remote code execution in pdf-image", () => {
   }
   file_exist = fs.existsSync(path);
   expect(file_exist).toBe(false);
+  let pdfImage = new PDFImage('asd.pdf"; touch pdf-image"');
   try {
-    let pdfImage = new PDFImage(
-      '"; touch pdf-image_2 #"',
-    );
-    return pdfImage.getInfo().finally(() => {
+    return pdfImage.numberOfPages().then(function (imagePath) {
       file_exist = fs.existsSync(path);
       expect(file_exist).toBe(true);
       fs.unlink(path, function (err) {});
     });
-  } catch (error) {}
+  } catch (e) {}
 });
