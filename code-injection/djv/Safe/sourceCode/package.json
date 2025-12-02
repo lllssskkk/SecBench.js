@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-28464",
+  "dependencies": {
+    "djv": "2.1.4"
+  },
+  "links": {
+    "source1": "https://github.com/advisories/GHSA-4hv7-3q38-97m8",
+    "source2": "https://security.snyk.io/vuln/SNYK-JS-DJV-1014545"
+  },
+  "fixCommit": "n/a",
+  "sink": "lib/utils/template.js:110:15",
+  "vulnerableVersion": "2.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@zhaoyao91/eval-in-vm",
+  "version": "0.0.0",
+  "description": "Eval code in vm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap"
+  },
+  "keywords": [
+    "zhaoyao91",
+    "eval",
+    "vm"
+  ],
+  "repository": "github.com/zhaoyao91-npm/eval-in-vm",
+  "author": {
+    "name": "zhaoyao91",
+    "email": "zhaoyao91@aliyun.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.17.1",
+    "tap": "^13.1.9"
+  }
+}

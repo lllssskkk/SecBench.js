@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2016-10548",
+  "dependencies": {
+    "reduce-css-calc": "1.2.5"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:reduce-css-calc:20160913",
+    "source2": "https://github.com/advisories/GHSA-4662-j96g-mv46"
+  },
+  "fixCommit": "n/a",
+  "sink": "index.js:73:16",
+  "vulnerableVersion": "1.2.0"
+}

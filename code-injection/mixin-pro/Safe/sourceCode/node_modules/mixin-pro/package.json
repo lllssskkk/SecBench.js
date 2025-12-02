@@ -1,0 +1,24 @@
+{
+  "name": "mixin-pro",
+  "description": "Javascript multi-inheritance with mixin for code reuse",
+  "version": "0.6.7",
+  "author": "Raymond Xie <rjfun.mobile@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/floatinghotpot/mixin-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/mixin-pro/issues"
+  },
+  "keywords": [
+    "mixin",
+    "inherit",
+    "multi-inherit",
+    "extend",
+    "multiple",
+    "rjfun"
+  ],
+  "license": "MIT",
+  "engines": { "node": ">= 0.4.0" },
+  "main": "./mixin.js"
+}

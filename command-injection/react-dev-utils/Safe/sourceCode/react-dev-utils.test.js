@@ -17,6 +17,6 @@ test("Command Injection in react-dev-utils", () => {
     "11;$(touch react-dev-utils)",
   );
   file_exist = fs.existsSync(path);
-  expect(file_exist).toBe(true);
+  expect(file_exist).toBe(false);
   fs.unlink(path, function (err) {});
 });

@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-15362",
+  "dependencies": {
+    "wifiscanner": "1.0.1"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-WIFISCANNER-574786",
+    "source2": "https://github.com/advisories/GHSA-m6rw-m2v9-7hx4"
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "n/a",
+  "sink": "scanners/wifiscanner.js:12:22"
+}

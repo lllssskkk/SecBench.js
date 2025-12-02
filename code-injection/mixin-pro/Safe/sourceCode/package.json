@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "mixin-pro": "0.6.7"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:mixin-pro:20160407",
+    "source2": ""
+  },
+  "fixCommit": "https://github.com/floatinghotpot/mixin-pro/commit/8bb355209f0a082d24b04355b3e8051a6455454f",
+  "sink": "",
+  "vulnerableVersion": "0.6.0"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-23358",
+  "dependencies": {
+    "underscore": "1.12.1"
+  },
+  "links": {
+    "source1": "https://github.com/advisories/GHSA-cf4h-3jhx-xvhq",
+    "source2": ""
+  },
+  "fixCommit": "https://github.com/jashkenas/underscore/commit/4c73526d43838ad6ab43a6134728776632adeb66",
+  "sink": "modules/template.js:71:14",
+  "vulnerableVersion": "1.13.0-0"
+}

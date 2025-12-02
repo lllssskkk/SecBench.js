@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "kmc": "1.2.2"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:kmc:20160407",
+    "source2": ""
+  },
+  "fixCommit": "n/a",
+  "sink": "lib/index.js:164:43",
+  "vulnerableVersion": "n/a"
+}
