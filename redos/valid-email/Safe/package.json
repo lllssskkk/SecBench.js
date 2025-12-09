@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "valid-email": "1.0.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:valid-email:20180222",
+    "source2": ""
+  },
+  "fixCommit": "https://github.com/johnhenry/valid-email/commit/624ffa60b42bed8c577a679d682dda286b4603e6",
+  "sink": "utils.js:391:28",
+  "vulnerableVersion": "0.0.1"
+}

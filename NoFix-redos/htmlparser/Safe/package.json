@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "htmlparser": "1.7.7"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:node-htmlparser-classic:20170906",
+    "source2": ""
+  },
+  "fixCommit": "n/a",
+  "sink": "htmlparser.js:226:72",
+  "vulnerableVersion": "n/a"
+}

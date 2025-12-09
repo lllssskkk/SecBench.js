@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2017-16138",
+  "dependencies": {
+    "mime": "2.0.3"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:mime:20170907",
+    "source2": "https://github.com/advisories/GHSA-wrvr-8mpx-r7pp"
+  },
+  "fixCommit": "https://github.com/broofa/node-mime/commit/1df903fdeb9ae7eaa048795b8d580ce2c98f40b0",
+  "sink": "mime.js:70:18",
+  "vulnerableVersion": "1.4.0"
+}

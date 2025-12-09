@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2017-16116",
+  "dependencies": {
+    "string": "3.3.3"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:string:20170907",
+    "source2": "https://github.com/advisories/GHSA-g36h-6r4f-3mqp"
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "",
+  "sink": "string.js:618:68"
+}

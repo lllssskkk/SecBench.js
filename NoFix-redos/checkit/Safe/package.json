@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "checkit": "0.7.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:checkit:20180226",
+    "source2": ""
+  },
+  "fixCommit": "https://github.com/tgriesser/checkit/pull/94",
+  "sink": "",
+  "vulnerableVersion": "n/a"
+}

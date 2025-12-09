@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-23392",
+  "dependencies": {
+    "locutus": "2.0.15"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-LOCUTUS-1090597",
+    "source2": "https://github.com/advisories/GHSA-39q4-p535-c852"
+  },
+  "fixCommit": "https://github.com/locutusjs/locutus/commit/eb863321990e7e5514aa14f68b8d9978ece9e65e",
+  "sink": "inet_pton.js:30:9",
+  "vulnerableVersion": "2.0.10"
+}
