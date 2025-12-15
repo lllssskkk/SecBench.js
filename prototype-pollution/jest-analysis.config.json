@@ -1,4 +1,0 @@
-{
-  "setupFilesAfterEnv": ["./require-interception.js"],
-  "transformIgnorePatterns": ["./require-interception.js"]
-}
