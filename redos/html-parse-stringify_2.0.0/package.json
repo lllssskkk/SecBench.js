@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-23346",
+  "dependencies": {
+    "html-parse-stringify": "2.0.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-HTMLPARSESTRINGIFY-1079306",
+    "source2": "https://github.com/advisories/GHSA-545q-3fg6-48m7"
+  },
+  "fixedVersion": "2.0.1",
+  "fixCommit": "https://github.com/HenrikJoreteg/html-parse-stringify/commit/c7274a48e59c92b2b7e906fedf9065159e73fe12",
+  "sink": "html-parse-stringify.js:1:1428"
+}
