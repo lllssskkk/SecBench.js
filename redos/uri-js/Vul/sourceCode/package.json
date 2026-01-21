@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2017-16021",
+  "dependencies": {
+    "uri-js": "2.1.1"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:uri-js:20160804",
+    "source2": "https://github.com/advisories/GHSA-333w-rxj3-f55r"
+  },
+  "fixedVersion": "3.0.0",
+  "fixCommit": "n/a",
+  "sink": "uri.js:175:33"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-23353",
+  "dependencies": {
+    "jspdf": "2.3.1"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-JSPDF-1073626",
+    "source2": "https://github.com/advisories/GHSA-57f3-gghm-9mhc"
+  },
+  "fixCommit": "https://github.com/MrRio/jsPDF/commit/d8bb3b39efcd129994f7a3b01b632164144ec43e",
+  "sink": "jspdf.node.min.js:86:5935",
+  "vulnerableVersion": "2.1.1"
+}

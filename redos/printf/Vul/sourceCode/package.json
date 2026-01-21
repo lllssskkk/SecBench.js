@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-23354",
+  "dependencies": {
+    "printf": "0.6.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-PRINTF-1072096",
+    "source2": "https://github.com/advisories/GHSA-xfhp-gmh8-r8v2"
+  },
+  "fixedVersion": "0.6.1",
+  "fixCommit": "n/a",
+  "sink": "printf.js:14:21"
+}

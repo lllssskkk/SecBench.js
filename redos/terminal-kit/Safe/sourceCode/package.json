@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "terminal-kit": "2.1.8"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-TERMINALKIT-1734787",
+    "source2": ""
+  },
+  "fixCommit": "https://github.com/cronvel/terminal-kit/commit/a2e446cc3927b559d0281683feb9b821e83b758c",
+  "sink": "misc.js:185:35",
+  "vulnerableVersion": "2.1.0"
+}
