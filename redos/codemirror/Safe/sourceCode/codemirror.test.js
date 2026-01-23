@@ -18,9 +18,9 @@ function cTypes(identifier) {
   );
 }
 test("ReDos in codemirror", () => {
-  const genstr = require("../utils").genstr;
+  const genstr = require("../../../utils").genstr;
   const measureTime =
-    require("../utils").measureTime;
+    require("../../../utils").measureTime;
   let str = genstr(65536, "a");
   let t = measureTime(function () {
     cTypes(str);

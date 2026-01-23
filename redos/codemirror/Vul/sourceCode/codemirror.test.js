@@ -12,15 +12,12 @@ let basicCTypes = [
 ];
 function cTypes(identifier) {
   return (
-    basicCTypes.propertyIsEnumerable(
-      identifier,
-    ) || /.+_t$/.test(identifier)
+    basicCTypes.propertyIsEnumerable(identifier) || /.+_t$/.test(identifier)
   );
 }
 test("ReDos in codemirror", () => {
-  const genstr = require("../utils").genstr;
-  const measureTime =
-    require("../utils").measureTime;
+  const genstr = require("../../../utils").genstr;
+  const measureTime = require("../../../utils").measureTime;
   let str = genstr(65536, "a");
   let t = measureTime(function () {
     cTypes(str);
