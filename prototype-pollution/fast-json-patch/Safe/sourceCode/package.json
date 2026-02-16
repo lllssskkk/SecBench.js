@@ -10,5 +10,5 @@
   },
   "fixCommit": "https://github.com/Starcounter-Jack/JSON-Patch/pull/219/commits/dd5d353f5d65888aeac91359484a73f0e2a9e5bd",
   "sink": "lib/core.js:28:18",
-  "vulnerableVersion": "2.0.4"
+  "vulnerableVersion": "2.0.7"
 }
