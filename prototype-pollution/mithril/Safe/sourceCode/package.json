@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/MithrilJS/mithril.js/commit/97fa1788c2184ff4b87fd3f558b7003f9eeee2b1",
   "sink": "mithril.js:982:19",
-  "vulnerableVersion": "1.0.0"
+  "vulnerableVersion": "1.1.6"
 }

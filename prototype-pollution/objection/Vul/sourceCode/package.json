@@ -1,7 +1,7 @@
 {
   "id": "CVE-2021-3766",
   "dependencies": {
-    "objection": "2.0.0"
+    "objection": "3.0.0-alpha.4"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-OBJECTION-1582910",

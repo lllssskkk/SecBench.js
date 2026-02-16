@@ -9,5 +9,5 @@
   },
   "fixCommit": "n/a",
   "sink": "index.js:587:14",
-  "vulnerableVersion": "6.0.0"
+  "vulnerableVersion": "18.1.0"
 }

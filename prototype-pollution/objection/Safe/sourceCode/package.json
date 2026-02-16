@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/vincit/objection.js/commit/b41aab8dcd78f426f7468dcda541a7aca18a66a6",
   "sink": "lib/utils/objectUtils.js:246:32",
-  "vulnerableVersion": "2.0.0"
+  "vulnerableVersion": "3.0.0-alpha.4"
 }

@@ -1,7 +1,7 @@
 {
   "id": "CVE-2021-4278",
   "dependencies": {
-    "tree-kit": "0.6.1"
+    "tree-kit": "0.6.2"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-TREEKIT-1077068",
