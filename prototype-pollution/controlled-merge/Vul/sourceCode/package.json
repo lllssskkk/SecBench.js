@@ -1,7 +1,7 @@
 {
   "id": "CVE-2020-28268",
   "dependencies": {
-    "controlled-merge": "1.0.0"
+    "controlled-merge": "1.2.0"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-CONTROLLEDMERGE-1040460",

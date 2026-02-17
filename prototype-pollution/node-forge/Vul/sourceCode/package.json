@@ -1,7 +1,7 @@
 {
   "id": "CVE-2020-7720",
   "dependencies": {
-    "node-forge": "0.9.0"
+    "node-forge": "0.9.2"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-NODEFORGE-598677",

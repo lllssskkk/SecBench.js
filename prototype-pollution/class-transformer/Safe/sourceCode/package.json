@@ -9,5 +9,5 @@
   },
   "fixCommit": "n/a",
   "sink": "TransformOperationExecutor.ts:163:46",
-  "vulnerableVersion": "0.1.1"
+  "vulnerableVersion": "0.2.3"
 }

@@ -9,5 +9,5 @@
   },
   "fixCommit": "n/a",
   "sink": "object/set.js:9:48",
-  "vulnerableVersion": "1.0.0"
+  "vulnerableVersion": "1.2.2"
 }
