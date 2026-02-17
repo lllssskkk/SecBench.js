@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/josdejong/mathjs/commit/ecb80514e80bce4e6ec7e71db8ff79954f07c57e",
   "sink": "lib/utils/object.js:131:17",
-  "vulnerableVersion": "7.4.0"
+  "vulnerableVersion": "7.5.0"
 }
