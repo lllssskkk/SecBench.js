@@ -9,5 +9,5 @@
   },
   "fixCommit": "n/a",
   "sink": "lib/apply.js:25:12",
-  "vulnerableVersion": "1.0.1"
+  "vulnerableVersion": "1.0.2"
 }

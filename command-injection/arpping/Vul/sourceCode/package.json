@@ -1,13 +1,14 @@
 {
   "id": "",
   "dependencies": {
-    "arpping": "commit : ce9efe8ab7f059ddf45ae4f8f7587689ac3c068c",
+    "arpping" : "2.0.0",
     "sleep": "6.3.0"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-ARPPING-1060047",
     "source2": ""
   },
+  "vulCOmmit" : "ce9efe8ab7f059ddf45ae4f8f7587689ac3c068c",
   "fixedVersion": "commit : 0db06723f8c3c73a5cc0829c667d45cba25ca44d",
   "fixCommit": "https://github.com/haf-decent/arpping/commit/0db06723f8c3c73a5cc0829c667d45cba25ca44d",
   "sink": "index.js:120:13"

@@ -1,7 +1,7 @@
 {
   "id": "CVE-2021-41097",
   "dependencies": {
-    "aurelia-path": "1.1.0"
+    "aurelia-path": "1.1.5"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-AURELIAPATH-1292346",

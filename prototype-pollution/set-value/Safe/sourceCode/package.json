@@ -1,7 +1,7 @@
 {
   "id": "CVE-2021-23440",
   "dependencies": {
-    "set-value": "4.0.1"
+    "set-value": "3.0.1"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-SETVALUE-1540541",

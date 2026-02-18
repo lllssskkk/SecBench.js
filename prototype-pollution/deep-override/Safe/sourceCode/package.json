@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/ASaiAnudeep/deep-override/commit/2aced17651fb684959a6e04b1465a8329b3d5268",
   "sink": "src/index.js:53:23",
-  "vulnerableVersion": "1.0.0"
+  "vulnerableVersion": "1.0.1"
 }

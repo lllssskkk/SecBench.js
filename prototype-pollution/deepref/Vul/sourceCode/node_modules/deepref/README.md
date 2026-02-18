@@ -23,12 +23,8 @@ Write to a deeply nested reference within an object.
 
   console.dir(obj);
   /*
-  * {
-  *  a: 'obj.a is set to this',
-  *  b: {
-  *    c: 'we can set nested fields'
-  *  }
-  *	}
+  * { a: 'obj.a is set to this',
+  *   b: { c: 'we can set nested fields' } }
   */
 
   deep.set(obj, 'd.0', 'we can even..');
@@ -37,17 +33,12 @@ Write to a deeply nested reference within an object.
 
   console.dir(obj);
   /*
-  * {
-  *  a: 'obj.a is set to this',
-  *  b: {
-  *    c: 'we can set nested fields'
-  *  },
-  *  d: [
-  *    'we can even..',
-  *    '..create arrays..',
-  *    '..by using an integer as the index'
-  *  ]
-  *	}
+   *{ a: 'obj.a is set to this',
+   *  b: { c: 'we can set nested fields' },
+   *  d:
+   *   [ 'we can even..',
+   *     '..create arrays..',
+   *     '..by using an integer as the index' ] }
   */
   ```
 

@@ -1,7 +1,7 @@
 {
   "id": "CVE-2021-29300",
   "dependencies": {
-    "samsung-remote": "1.5.2"
+    "samsung-remote": "1.3.5"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-SAMSUNGREMOTE-72278",

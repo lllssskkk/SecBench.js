@@ -1,7 +1,7 @@
 {
   "id": "CVE-2020-8268",
   "dependencies": {
-    "json8-merge-patch": "1.0.1"
+    "json8-merge-patch": "1.0.2"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-JSON8MERGEPATCH-1038399",

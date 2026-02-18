@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/okunishinishi/node-objnest/commit/c541e1a775b562d63402a14dac9f8cbc52b116d7",
   "sink": "lib/objnest.js:44:35",
-  "vulnerableVersion": "5.0.0"
+  "vulnerableVersion": "5.0.10"
 }

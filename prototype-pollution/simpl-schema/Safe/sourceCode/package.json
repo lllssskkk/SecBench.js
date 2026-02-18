@@ -9,5 +9,5 @@
   },
   "fixCommit": "n/a",
   "sink": "dist/utility/merge.js:31:27",
-  "vulnerableVersion": "1.10.0"
+  "vulnerableVersion": "1.10.1"
 }

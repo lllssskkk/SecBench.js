@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/panates/putil-merge/commit/a8f5087faaa034cc2dc2e8070c13014ad6a34043",
   "sink": "lib/merge.js:72:19",
-  "vulnerableVersion": "3.0.0"
+  "vulnerableVersion": "3.6.6"
 }

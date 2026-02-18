@@ -1,7 +1,7 @@
 {
   "id": "CVE-2020-7748",
   "dependencies": {
-    "@tsed/core": "5.62.3"
+    "@tsed/core": "5.65.6"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-TSEDCORE-1019382",

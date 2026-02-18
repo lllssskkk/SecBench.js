@@ -9,5 +9,5 @@
   },
   "fixCommit": "n/a",
   "sink": "dist/dset.js:6:18",
-  "vulnerableVersion": "1.0.0"
+  "vulnerableVersion": "2.0.1"
 }

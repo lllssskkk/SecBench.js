@@ -1,7 +1,7 @@
 {
   "id": "CVE-2020-28471",
   "dependencies": {
-    "properties-reader": "2.0.0"
+    "properties-reader": "2.1.1"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-PROPERTIESREADER-1048968",

@@ -1,7 +1,7 @@
 {
   "id": "",
   "dependencies": {
-    "think-config": "1.1.3"
+    "think-config": "1.0.2"
   },
   "links": {
     "source1": "https://github.com/advisories/GHSA-6cj2-92m5-7mvp",

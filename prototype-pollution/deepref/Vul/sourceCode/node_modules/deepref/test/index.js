@@ -1,6 +1,11 @@
-var should = require('chai').should();
+var chai = require('chai');
+var assert = chai.assert,
+    expect = chai.expect,
+    should = chai.should();
 var deepref = require('../index');
 var set = deepref.set;
+var decorate = deepref.decorate;
+var undecorate = deepref.undecorate;
 
 describe('#set', function() {
   it('sets obj[0] to true', function() {
@@ -36,5 +41,30 @@ describe('#set', function() {
     obj.a[0].should.equal('A');
     obj.a[1].should.equal('B');
     obj.a[2].should.equal('C');
+  });
+});
+
+describe('#decorate', function() {
+  it('gives obj setKey method', function() {
+    var obj = {};
+    decorate(obj);
+    expect(obj.setKey).to.be.a('function');
+  });
+
+  it('obj.setKey(\'a.b\') sets obj.a.b to 1', function() {
+    var obj = {};
+    decorate(obj);
+    obj.setKey('a.b', 1);
+    obj.a.b.should.equal(1);
+  });
+});
+
+describe('#undecorate', function() {
+  it('removes setKey method from object', function() {
+    var obj = {};
+    decorate(obj);
+    expect(obj.setKey).to.be.a('function');
+    undecorate(obj);
+    expect(obj.setKey).to.not.be.a('function');
   });
 });

@@ -1,7 +1,7 @@
 {
   "id": "",
   "dependencies": {
-    "nestie": "1.0.2"
+    "nestie": "1.0.1"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-NESTIE-1300518",

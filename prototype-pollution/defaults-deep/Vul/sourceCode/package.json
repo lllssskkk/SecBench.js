@@ -1,7 +1,7 @@
 {
   "id": "CVE-2018-3723",
   "dependencies": {
-    "defaults-deep": "0.2.0"
+    "defaults-deep": "0.2.3"
   },
   "links": {
     "source1": "https://hackerone.com/reports/310514",

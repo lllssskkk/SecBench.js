@@ -1,7 +1,7 @@
 {
   "id": "CVE-2020-7772",
   "dependencies": {
-    "doc-path": "2.3.0"
+    "doc-path": "2.1.0"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-DOCPATH-1011952",

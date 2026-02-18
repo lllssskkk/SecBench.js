@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/angus-c/just/commit/dd57a476f4bb9d78c6f60741898dc04c71d2eb53",
   "sink": "index.js:36:17",
-  "vulnerableVersion": "1.0.0"
+  "vulnerableVersion": "2.2.1"
 }

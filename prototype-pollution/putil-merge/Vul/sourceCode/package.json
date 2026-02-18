@@ -1,7 +1,7 @@
 {
   "id": " CVE-2021-25953",
   "dependencies": {
-    "putil-merge": "3.0.0"
+    "putil-merge": "3.6.6"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-PUTILMERGE-1317077",

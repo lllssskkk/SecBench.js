@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/cosmosio/nested-property/commit/881cf37eb956641fc26011ff66a436eb603c89d1",
   "sink": "index.js:95:27",
-  "vulnerableVersion": "0.0.5"
+  "vulnerableVersion": "2.0.2"
 }

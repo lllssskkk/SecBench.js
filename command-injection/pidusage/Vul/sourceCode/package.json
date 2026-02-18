@@ -1,7 +1,7 @@
 {
   "id": "CVE-2017-16034",
   "dependencies": {
-    "pidusage": "1.0.0"
+    "pidusage": "1.1.4"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/npm:pidusage:20170605",

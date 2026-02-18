@@ -8,12 +8,25 @@ module.exports = {
   * @param  {*} value The value you want to set
   * @return {Object} object Retuns the altered object
   */
-  set: function(object, path, value) {
-    var reference = Reference.createFromPath(object, path);
-    reference.set(value);
-    return reference.resolve();
+  set: set,
+
+  decorate: function(object) {
+    object.setKey = function(path, value) {
+      return set(object, path, value);
+    };
+  },
+  undecorate: function(object) {
+    if (typeof object.setKey === 'function') {
+      delete object.setKey;
+    }
   }
 };
+
+function set(object, path, value) {
+  var reference = Reference.createFromPath(object, path);
+  reference.set(value);
+  return reference.resolve();
+}
 
 function Reference(pointer, field, parent) {
   this.pointer = pointer;

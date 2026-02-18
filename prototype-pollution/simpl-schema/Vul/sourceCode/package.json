@@ -1,7 +1,7 @@
 {
   "id": "CVE-2020-7742",
   "dependencies": {
-    "simpl-schema": "1.10.0"
+    "simpl-schema": "1.10.1"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-SIMPLSCHEMA-1016157",

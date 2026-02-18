@@ -1,7 +1,7 @@
 {
   "id": "CVE-2017-16042",
   "dependencies": {
-    "growl": "1.9.0"
+    "growl": "1.9.2"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/npm:growl:20160721",

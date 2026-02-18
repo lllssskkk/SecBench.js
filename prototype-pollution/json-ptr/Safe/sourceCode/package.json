@@ -1,7 +1,7 @@
 {
   "id": "CVE-2021-23509",
   "dependencies": {
-    "json-ptr": "3.0.0"
+    "json-ptr": "1.3.0"
   },
   "links": {
     "source1": "https://security.snyk.io/vuln/SNYK-JS-JSONPTR-1577291",
@@ -9,5 +9,5 @@
   },
   "fixCommit": "https://github.com/flitbit/json-ptr/commit/5dc458fbad1c382a2e3ca6d62e66ede3d92849ca",
   "sink": "index.js:277:26",
-  "vulnerableVersion": "1.1.0"
+  "vulnerableVersion": "1.2.0"
 }
