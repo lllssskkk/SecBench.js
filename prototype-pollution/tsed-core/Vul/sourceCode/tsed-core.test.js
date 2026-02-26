@@ -1,6 +1,6 @@
 //https://snyk.io/vuln/SNYK-JS-TSEDCORE-1019382
 test("prototype pollution in @tsed/core", () => {
-  const { deepExtends } = require("@tsed/core");
+  const { deepExtends } = require("tsed-core/core");
 
   const payload = JSON.parse(
     '{"__proto__": {"polluted": "yes"}}',
