@@ -1,0 +1,45 @@
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/typingsInstaller.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/typingsInstaller.js
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/typescriptServices.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/typescriptServices.js
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/typescript.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/typescript.js
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/tsserverlibrary.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/tsserverlibrary.js
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/tsserver.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/tsserver.js
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/tsc.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/typescript/lib/tsc.js
+Deleted, because gumtree report "java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2"
+
+
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/mkdirp/bin/cmd.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/mkdirp/bin/cmd.js
+
+Deleted, because gumtree internal error 
+
+Error while running client 'textdiff'.
+com.github.gumtreediff.gen.SyntaxException
+        at com.github.gumtreediff.gen.ExternalProcessTreeGenerator.readStandardOutput(ExternalProcessTreeGenerator.java:43)
+        at com.github.gumtreediff.gen.jsacorn.JsAcornTreeGenerator.generate(JsAcornTreeGenerator.java:40)
+        at com.github.gumtreediff.gen.TreeGenerator.generateTree(TreeGenerator.java:41)
+        at com.github.gumtreediff.gen.TreeGenerator$ReaderConfigurator.reader(TreeGenerator.java:119)
+        at com.github.gumtreediff.gen.TreeGenerator$ReaderConfigurator.file(TreeGenerator.java:90)
+        at com.github.gumtreediff.gen.TreeGenerator$ReaderConfigurator.file(TreeGenerator.java:100)
+        at com.github.gumtreediff.gen.TreeGenerators.getTree(TreeGenerators.java:58)
+        at com.github.gumtreediff.gen.TreeGenerators.getTree(TreeGenerators.java:70)
+        at com.github.gumtreediff.actions.Diff.compute(Diff.java:81)
+        at com.github.gumtreediff.client.diff.AbstractDiffClient.getDiff(AbstractDiffClient.java:132)
+        at com.github.gumtreediff.client.diff.AbstractDiffClient.getDiff(AbstractDiffClient.java:127)
+        at com.github.gumtreediff.client.diff.TextDiff.run(TextDiff.java:101)
+        at com.github.gumtreediff.client.Run.startClient(Run.java:94)
+        at com.github.gumtreediff.client.Run.main(Run.java:128)
+
+
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/bluebird/js/browser/bluebird.min.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/bluebird/js/browser/bluebird.min.js
+rm -f SecBench.js/prototype-pollution/jointjs/Safe/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/bluebird/js/browser/bluebird.core.min.js
+rm -f SecBench.js/prototype-pollution/jointjs/Vul/sourceCode/node_modules/jointjs/demo/ts-demo/node_modules/bluebird/js/browser/bluebird.core.min.js
+Deleted, because gumtree reports 
+
+"Message: An invalid XML character (Unicode: 0x1b) was found in the value of attribute \"label\" and element is \"tree\""
