@@ -1,0 +1,4081 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.23.3",
+        "notifications" : [ {
+          "id" : "js/baseline/expected-extracted-files",
+          "name" : "js/baseline/expected-extracted-files",
+          "shortDescription" : {
+            "text" : "Expected extracted files"
+          },
+          "fullDescription" : {
+            "text" : "Files appearing in the source archive that are expected to be extracted."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true
+          },
+          "properties" : {
+            "tags" : [ "expected-extracted-files", "telemetry" ]
+          }
+        }, {
+          "id" : "cli/platform",
+          "name" : "cli/platform",
+          "shortDescription" : {
+            "text" : "Platform"
+          },
+          "fullDescription" : {
+            "text" : "Platform"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true
+          }
+        } ],
+        "rules" : [ {
+          "id" : "js/prototype-polluting-assignment",
+          "name" : "js/prototype-polluting-assignment",
+          "shortDescription" : {
+            "text" : "Prototype-polluting assignment"
+          },
+          "fullDescription" : {
+            "text" : "Modifying an object obtained via a user-controlled property name may lead to accidental mutation of the built-in Object prototype, and possibly escalate to remote code execution or cross-site scripting."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-078", "external/cwe/cwe-079", "external/cwe/cwe-094", "external/cwe/cwe-471", "external/cwe/cwe-915" ],
+            "description" : "Modifying an object obtained via a user-controlled property name may lead to accidental mutation of the built-in Object prototype, and possibly escalate to remote code execution or cross-site scripting.",
+            "id" : "js/prototype-polluting-assignment",
+            "kind" : "path-problem",
+            "name" : "Prototype-polluting assignment",
+            "precision" : "high",
+            "problem.severity" : "warning"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "clientside-prototype-pollution",
+        "semanticVersion" : "0.0.0+80947af15c41d20acffaefa76f93ab1eaaa46aa1",
+        "locations" : [ {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE915/PrototypePollutingAssignment.ql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackRoot" ]
+          }
+        }, {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE915/PrototypePollutingAssignment.ql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackDefinitionFile" ]
+          }
+        } ]
+      }, {
+        "name" : "codeql/javascript-all",
+        "semanticVersion" : "2.6.20+c5329f6f3863621c140ea7abd5954860e96c8bf1",
+        "locations" : [ {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackRoot" ]
+          }
+        }, {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackDefinitionFile" ]
+          }
+        } ]
+      }, {
+        "name" : "codeql/threat-models",
+        "semanticVersion" : "1.0.40+c5329f6f3863621c140ea7abd5954860e96c8bf1",
+        "locations" : [ {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackRoot" ]
+          }
+        }, {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackDefinitionFile" ]
+          }
+        } ]
+      } ]
+    },
+    "invocations" : [ {
+      "toolExecutionNotifications" : [ {
+        "locations" : [ {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "set-value.test.js",
+              "uriBaseId" : "%SRCROOT%",
+              "index" : 1
+            }
+          }
+        } ],
+        "message" : {
+          "text" : ""
+        },
+        "level" : "none",
+        "descriptor" : {
+          "id" : "js/baseline/expected-extracted-files",
+          "index" : 0
+        },
+        "properties" : {
+          "formattedMessage" : {
+            "text" : ""
+          }
+        }
+      }, {
+        "message" : {
+          "text" : "On the Linux (amd64; 5.15.0-171-generic) platform.",
+          "markdown" : "On the Linux (amd64; 5.15.0-171-generic) platform."
+        },
+        "level" : "none",
+        "timeUtc" : "2026-03-04T10:17:04.797417868Z",
+        "descriptor" : {
+          "id" : "cli/platform",
+          "index" : 1
+        },
+        "properties" : {
+          "attributes" : {
+            "arch" : "amd64",
+            "name" : "Linux",
+            "version" : "5.15.0-171-generic"
+          },
+          "visibility" : {
+            "statusPage" : false,
+            "telemetry" : true
+          }
+        }
+      } ],
+      "executionSuccessful" : true
+    } ],
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "node_modules/set-value/index.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "set-value.test.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 1
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "js/prototype-polluting-assignment",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "js/prototype-polluting-assignment",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "This assignment may alter Object.prototype if a malicious  '__proto__' string is injected from [library input](1).\nThis assignment may alter Object.prototype if a malicious  '__proto__' string is injected from [library input](2)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 41,
+            "startColumn" : 7,
+            "endColumn" : 13
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7fd6d533dd922218:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 22,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 27,
+                  "endColumn" : 31
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts))"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey)"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 41,
+                  "startColumn" : 7,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 22,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 40,
+                  "endColumn" : 44
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 63,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 12,
+                  "endColumn" : 16
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 12,
+                  "endColumn" : 28
+                }
+              },
+              "message" : {
+                "text" : "path.split(char) [ArrayElement]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 5,
+                  "endColumn" : 9
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 14,
+                  "endColumn" : 18
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 5,
+                  "endColumn" : 8
+                }
+              },
+              "message" : {
+                "text" : "[post update] res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 85,
+                  "startColumn" : 10,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 34,
+                  "endColumn" : 51
+                }
+              },
+              "message" : {
+                "text" : "split(path, opts) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts)) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 41,
+                  "startColumn" : 7,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 35,
+                  "endColumn" : 42
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 14,
+                  "endColumn" : 21
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 7,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "opts"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 46,
+                  "endColumn" : 50
+                }
+              },
+              "message" : {
+                "text" : "opts"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 63,
+                  "startColumn" : 22,
+                  "endColumn" : 29
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 12,
+                  "endColumn" : 19
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 12,
+                  "endColumn" : 31
+                }
+              },
+              "message" : {
+                "text" : "options.split(path) [ArrayElement]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 5,
+                  "endColumn" : 9
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 14,
+                  "endColumn" : 18
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 5,
+                  "endColumn" : 8
+                }
+              },
+              "message" : {
+                "text" : "[post update] res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 85,
+                  "startColumn" : 10,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 34,
+                  "endColumn" : 51
+                }
+              },
+              "message" : {
+                "text" : "split(path, opts) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts)) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 41,
+                  "startColumn" : 7,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 22,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "library input"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 35,
+            "endColumn" : 42
+          }
+        },
+        "message" : {
+          "text" : "library input"
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 22,
+            "endColumn" : 26
+          }
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 35,
+            "endColumn" : 42
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "js/prototype-polluting-assignment",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "js/prototype-polluting-assignment",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "This assignment may alter Object.prototype if a malicious  '__proto__' string is injected from [library input](1).\nThis assignment may alter Object.prototype if a malicious  '__proto__' string is injected from [library input](2)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 57,
+            "startColumn" : 5,
+            "endColumn" : 11
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "95a07d540640e172:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 22,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 27,
+                  "endColumn" : 31
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts))"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey)"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 45,
+                  "startColumn" : 14,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 55,
+                  "startColumn" : 17,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 57,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 22,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 40,
+                  "endColumn" : 44
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 63,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 12,
+                  "endColumn" : 16
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 12,
+                  "endColumn" : 28
+                }
+              },
+              "message" : {
+                "text" : "path.split(char) [ArrayElement]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 5,
+                  "endColumn" : 9
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 14,
+                  "endColumn" : 18
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 5,
+                  "endColumn" : 8
+                }
+              },
+              "message" : {
+                "text" : "[post update] res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 85,
+                  "startColumn" : 10,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 34,
+                  "endColumn" : 51
+                }
+              },
+              "message" : {
+                "text" : "split(path, opts) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts)) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 45,
+                  "startColumn" : 14,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 55,
+                  "startColumn" : 17,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 57,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 35,
+                  "endColumn" : 42
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 14,
+                  "endColumn" : 21
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 7,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "opts"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 46,
+                  "endColumn" : 50
+                }
+              },
+              "message" : {
+                "text" : "opts"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 63,
+                  "startColumn" : 22,
+                  "endColumn" : 29
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 12,
+                  "endColumn" : 19
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 12,
+                  "endColumn" : 31
+                }
+              },
+              "message" : {
+                "text" : "options.split(path) [ArrayElement]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 5,
+                  "endColumn" : 9
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 14,
+                  "endColumn" : 18
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 5,
+                  "endColumn" : 8
+                }
+              },
+              "message" : {
+                "text" : "[post update] res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 85,
+                  "startColumn" : 10,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 34,
+                  "endColumn" : 51
+                }
+              },
+              "message" : {
+                "text" : "split(path, opts) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts)) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 45,
+                  "startColumn" : 14,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 55,
+                  "startColumn" : 17,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 57,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 22,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "library input"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 35,
+            "endColumn" : 42
+          }
+        },
+        "message" : {
+          "text" : "library input"
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 22,
+            "endColumn" : 26
+          }
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 35,
+            "endColumn" : 42
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "js/prototype-polluting-assignment",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "js/prototype-polluting-assignment",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "This assignment may alter Object.prototype if a malicious  '__proto__' string is injected from [library input](1).\nThis assignment may alter Object.prototype if a malicious  '__proto__' string is injected from [library input](2)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 59,
+            "startColumn" : 5,
+            "endColumn" : 11
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2b67259fab24f948:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 22,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 27,
+                  "endColumn" : 31
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts))"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey)"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 45,
+                  "startColumn" : 14,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 55,
+                  "startColumn" : 17,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 59,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 22,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 40,
+                  "endColumn" : 44
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 63,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 12,
+                  "endColumn" : 16
+                }
+              },
+              "message" : {
+                "text" : "path"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 12,
+                  "endColumn" : 28
+                }
+              },
+              "message" : {
+                "text" : "path.split(char) [ArrayElement]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 74,
+                  "startColumn" : 5,
+                  "endColumn" : 9
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 14,
+                  "endColumn" : 18
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 5,
+                  "endColumn" : 8
+                }
+              },
+              "message" : {
+                "text" : "[post update] res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 85,
+                  "startColumn" : 10,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 34,
+                  "endColumn" : 51
+                }
+              },
+              "message" : {
+                "text" : "split(path, opts) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts)) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 45,
+                  "startColumn" : 14,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 55,
+                  "startColumn" : 17,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 59,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 12,
+                  "startColumn" : 35,
+                  "endColumn" : 42
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 14,
+                  "endColumn" : 21
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 7,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "opts"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 46,
+                  "endColumn" : 50
+                }
+              },
+              "message" : {
+                "text" : "opts"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 63,
+                  "startColumn" : 22,
+                  "endColumn" : 29
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 12,
+                  "endColumn" : 19
+                }
+              },
+              "message" : {
+                "text" : "options"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 12,
+                  "endColumn" : 31
+                }
+              },
+              "message" : {
+                "text" : "options.split(path) [ArrayElement]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 5,
+                  "endColumn" : 9
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 78,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 14,
+                  "endColumn" : 18
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 82,
+                  "startColumn" : 5,
+                  "endColumn" : 8
+                }
+              },
+              "message" : {
+                "text" : "[post update] res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 85,
+                  "startColumn" : 10,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "res [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 34,
+                  "endColumn" : 51
+                }
+              },
+              "message" : {
+                "text" : "split(path, opts) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 52
+                }
+              },
+              "message" : {
+                "text" : "(isArra ...  opts)) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 16,
+                  "endColumn" : 71
+                }
+              },
+              "message" : {
+                "text" : "(isArra ... lidKey) [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 28,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "keys [ArrayElement]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "keys[i]"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 38,
+                  "startColumn" : 9,
+                  "endColumn" : 13
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 21,
+                  "endColumn" : 25
+                }
+              },
+              "message" : {
+                "text" : "prop"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 14,
+                  "endColumn" : 26
+                }
+              },
+              "message" : {
+                "text" : "target[prop]"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 49,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 45,
+                  "startColumn" : 14,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 55,
+                  "startColumn" : 17,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/set-value/index.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 59,
+                  "startColumn" : 5,
+                  "endColumn" : 11
+                }
+              },
+              "message" : {
+                "text" : "target"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 22,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "library input"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 35,
+            "endColumn" : 42
+          }
+        },
+        "message" : {
+          "text" : "library input"
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 22,
+            "endColumn" : 26
+          }
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/set-value/index.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 35,
+            "endColumn" : 42
+          }
+        }
+      } ]
+    } ],
+    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarif-latest"
+    }
+  } ]
+}

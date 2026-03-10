@@ -1,0 +1,23 @@
+	Command being timed: "codeql database analyze /home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/get-npm-package-version/Vul_IntermediateResult/ShellCommandInjectionFromEnvironment/nonContextual/db /home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE078/ShellCommandInjectionFromEnvironment.ql/ShellCommandInjectionFromEnvironment.ql --format=sarif-latest --max-paths=100 --no-sarif-minify --ram=20480 --rerun -j=0 --output=/home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/get-npm-package-version/Vul_IntermediateResult/ShellCommandInjectionFromEnvironment/nonContextual/sarifOutput/result.sarif --additional-packs=/home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql"
+	User time (seconds): 340.41
+	System time (seconds): 15.72
+	Percent of CPU this job got: 2230%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1535212
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2161
+	Minor (reclaiming a frame) page faults: 734407
+	Voluntary context switches: 311027
+	Involuntary context switches: 10127
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 57400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,23 @@
+	Command being timed: "codeql database analyze /home/sikai/DifferentialAlertAnalysis/SecBench.js/prototype-pollution/object-path-set/Vul_IntermediateResult/PrototypePollutingAssignment/contextual/CombinatorialContextual/MidNodeApproach/db /home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE915/PrototypePollutingAssignment.ql/PrototypePollutingAssignment.ql --format=sarif-latest --max-paths=100 --no-sarif-minify --ram=20480 --rerun -j=0 --output=/home/sikai/DifferentialAlertAnalysis/SecBench.js/prototype-pollution/object-path-set/Vul_IntermediateResult/PrototypePollutingAssignment/contextual/CombinatorialContextual/MidNodeApproach/sarifOutput/result.sarif --additional-packs=/home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql"
+	User time (seconds): 594.28
+	System time (seconds): 37.34
+	Percent of CPU this job got: 751%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:24.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4373724
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2200
+	Minor (reclaiming a frame) page faults: 1406650
+	Voluntary context switches: 556577
+	Involuntary context switches: 6286
+	Swaps: 0
+	File system inputs: 176
+	File system outputs: 65376
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

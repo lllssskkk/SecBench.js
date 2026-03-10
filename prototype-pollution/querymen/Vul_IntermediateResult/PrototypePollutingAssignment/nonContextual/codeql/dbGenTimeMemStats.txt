@@ -1,0 +1,23 @@
+	Command being timed: "codeql database create /home/sikai/DifferentialAlertAnalysis/SecBench.js/prototype-pollution/querymen/Vul_IntermediateResult/PrototypePollutingAssignment/nonContextual/db --language=javascript --source-root=/home/sikai/DifferentialAlertAnalysis/SecBench.js/prototype-pollution/querymen/Vul/sourceCode --extractor-options-file=/home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/db-builder/builder.yml --threads=1 --overwrite --logdir=/home/sikai/DifferentialAlertAnalysis/SecBench.js/prototype-pollution/querymen/Vul_IntermediateResult/PrototypePollutingAssignment/nonContextual/db/../database-creation.log"
+	User time (seconds): 67.97
+	System time (seconds): 5.79
+	Percent of CPU this job got: 386%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1457932
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 11150
+	Minor (reclaiming a frame) page faults: 725687
+	Voluntary context switches: 106356
+	Involuntary context switches: 332
+	Swaps: 0
+	File system inputs: 1712
+	File system outputs: 182632
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

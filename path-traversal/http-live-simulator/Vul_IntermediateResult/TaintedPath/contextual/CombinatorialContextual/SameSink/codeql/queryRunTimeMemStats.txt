@@ -1,0 +1,23 @@
+	Command being timed: "codeql database analyze /home/sikai/DifferentialAlertAnalysis/SecBench.js/path-traversal/http-live-simulator/Vul_IntermediateResult/TaintedPath/contextual/CombinatorialContextual/SameSink/db /home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE022/TaintedPath.ql/TaintedPath.ql --format=sarif-latest --max-paths=100 --no-sarif-minify --ram=20480 --rerun -j=0 --output=/home/sikai/DifferentialAlertAnalysis/SecBench.js/path-traversal/http-live-simulator/Vul_IntermediateResult/TaintedPath/contextual/CombinatorialContextual/SameSink/sarifOutput/result.sarif --additional-packs=/home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql"
+	User time (seconds): 578.80
+	System time (seconds): 34.08
+	Percent of CPU this job got: 606%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:41.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3717788
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2101
+	Minor (reclaiming a frame) page faults: 1252711
+	Voluntary context switches: 555522
+	Involuntary context switches: 7628
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64984
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

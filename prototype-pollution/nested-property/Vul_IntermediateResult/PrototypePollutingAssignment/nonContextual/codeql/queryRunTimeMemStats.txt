@@ -1,0 +1,23 @@
+	Command being timed: "codeql database analyze /home/sikai/DifferentialAlertAnalysis/SecBench.js/prototype-pollution/nested-property/Vul_IntermediateResult/PrototypePollutingAssignment/nonContextual/db /home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE915/PrototypePollutingAssignment.ql/PrototypePollutingAssignment.ql --format=sarif-latest --max-paths=100 --no-sarif-minify --ram=20480 --rerun -j=0 --output=/home/sikai/DifferentialAlertAnalysis/SecBench.js/prototype-pollution/nested-property/Vul_IntermediateResult/PrototypePollutingAssignment/nonContextual/sarifOutput/result.sarif --additional-packs=/home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql"
+	User time (seconds): 528.32
+	System time (seconds): 30.06
+	Percent of CPU this job got: 857%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:05.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3907104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1917
+	Minor (reclaiming a frame) page faults: 1284345
+	Voluntary context switches: 522785
+	Involuntary context switches: 5719
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 57344
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

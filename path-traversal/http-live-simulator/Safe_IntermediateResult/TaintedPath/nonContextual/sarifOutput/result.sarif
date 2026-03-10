@@ -1,0 +1,681 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.23.3",
+        "notifications" : [ {
+          "id" : "js/baseline/expected-extracted-files",
+          "name" : "js/baseline/expected-extracted-files",
+          "shortDescription" : {
+            "text" : "Expected extracted files"
+          },
+          "fullDescription" : {
+            "text" : "Files appearing in the source archive that are expected to be extracted."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true
+          },
+          "properties" : {
+            "tags" : [ "expected-extracted-files", "telemetry" ]
+          }
+        }, {
+          "id" : "cli/platform",
+          "name" : "cli/platform",
+          "shortDescription" : {
+            "text" : "Platform"
+          },
+          "fullDescription" : {
+            "text" : "Platform"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true
+          }
+        } ],
+        "rules" : [ {
+          "id" : "js/path-injection",
+          "name" : "js/path-injection",
+          "shortDescription" : {
+            "text" : "Uncontrolled data used in path expression"
+          },
+          "fullDescription" : {
+            "text" : "Accessing paths influenced by users can allow an attacker to access unexpected resources."
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "error"
+          },
+          "properties" : {
+            "tags" : [ "security", "external/cwe/cwe-022", "external/cwe/cwe-023", "external/cwe/cwe-036", "external/cwe/cwe-073", "external/cwe/cwe-099" ],
+            "description" : "Accessing paths influenced by users can allow an attacker to access unexpected resources.",
+            "id" : "js/path-injection",
+            "kind" : "path-problem",
+            "name" : "Uncontrolled data used in path expression",
+            "precision" : "high",
+            "problem.severity" : "error"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "clientside-prototype-pollution",
+        "semanticVersion" : "0.0.0+80947af15c41d20acffaefa76f93ab1eaaa46aa1",
+        "locations" : [ {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE022/TaintedPath.ql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackRoot" ]
+          }
+        }, {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE022/TaintedPath.ql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackDefinitionFile" ]
+          }
+        } ]
+      }, {
+        "name" : "codeql/javascript-all",
+        "semanticVersion" : "2.6.20+c5329f6f3863621c140ea7abd5954860e96c8bf1",
+        "locations" : [ {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackRoot" ]
+          }
+        }, {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackDefinitionFile" ]
+          }
+        } ]
+      }, {
+        "name" : "codeql/threat-models",
+        "semanticVersion" : "1.0.40+c5329f6f3863621c140ea7abd5954860e96c8bf1",
+        "locations" : [ {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackRoot" ]
+          }
+        }, {
+          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          },
+          "properties" : {
+            "tags" : [ "CodeQL/LocalPackDefinitionFile" ]
+          }
+        } ]
+      } ]
+    },
+    "invocations" : [ {
+      "toolExecutionNotifications" : [ {
+        "locations" : [ {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "http-live-simulator.test.js",
+              "uriBaseId" : "%SRCROOT%",
+              "index" : 1
+            }
+          }
+        } ],
+        "message" : {
+          "text" : ""
+        },
+        "level" : "none",
+        "descriptor" : {
+          "id" : "js/baseline/expected-extracted-files",
+          "index" : 0
+        },
+        "properties" : {
+          "formattedMessage" : {
+            "text" : ""
+          }
+        }
+      }, {
+        "message" : {
+          "text" : "On the Linux (amd64; 5.15.0-171-generic) platform.",
+          "markdown" : "On the Linux (amd64; 5.15.0-171-generic) platform."
+        },
+        "level" : "none",
+        "timeUtc" : "2026-03-04T03:16:48.778815943Z",
+        "descriptor" : {
+          "id" : "cli/platform",
+          "index" : 1
+        },
+        "properties" : {
+          "attributes" : {
+            "arch" : "amd64",
+            "name" : "Linux",
+            "version" : "5.15.0-171-generic"
+          },
+          "visibility" : {
+            "statusPage" : false,
+            "telemetry" : true
+          }
+        }
+      } ],
+      "executionSuccessful" : true
+    } ],
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "http-live-simulator.test.js",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 1
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "js/path-injection",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "js/path-injection",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "This path depends on a [user-provided value](1)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 96,
+            "startColumn" : 21,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3584171939d7390e:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 27,
+                  "endColumn" : 34
+                }
+              },
+              "message" : {
+                "text" : "req.url"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 17,
+                  "endColumn" : 41
+                }
+              },
+              "message" : {
+                "text" : "url.par ... , true)"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 17,
+                  "endColumn" : 50
+                }
+              },
+              "message" : {
+                "text" : "url.par ... athname"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 6,
+                  "endColumn" : 14
+                }
+              },
+              "message" : {
+                "text" : "pathname"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 73,
+                  "startColumn" : 8,
+                  "endColumn" : 16
+                }
+              },
+              "message" : {
+                "text" : "pathname"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 93,
+                  "startColumn" : 29,
+                  "endColumn" : 37
+                }
+              },
+              "message" : {
+                "text" : "pathname"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 93,
+                  "startColumn" : 13,
+                  "endColumn" : 37
+                }
+              },
+              "message" : {
+                "text" : "process ... athname"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 93,
+                  "startColumn" : 3,
+                  "endColumn" : 10
+                }
+              },
+              "message" : {
+                "text" : "abspath"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 96,
+                  "startColumn" : 21,
+                  "endColumn" : 28
+                }
+              },
+              "message" : {
+                "text" : "abspath"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 72,
+            "startColumn" : 27,
+            "endColumn" : 34
+          }
+        },
+        "message" : {
+          "text" : "user-provided value"
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 72,
+            "startColumn" : 27,
+            "endColumn" : 34
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "js/path-injection",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "js/path-injection",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "This path depends on a [user-provided value](1)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 97,
+            "startColumn" : 16,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d612b753394671f1:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 27,
+                  "endColumn" : 34
+                }
+              },
+              "message" : {
+                "text" : "req.url"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 17,
+                  "endColumn" : 41
+                }
+              },
+              "message" : {
+                "text" : "url.par ... , true)"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 17,
+                  "endColumn" : 50
+                }
+              },
+              "message" : {
+                "text" : "url.par ... athname"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 72,
+                  "startColumn" : 6,
+                  "endColumn" : 14
+                }
+              },
+              "message" : {
+                "text" : "pathname"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 73,
+                  "startColumn" : 8,
+                  "endColumn" : 16
+                }
+              },
+              "message" : {
+                "text" : "pathname"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 93,
+                  "startColumn" : 29,
+                  "endColumn" : 37
+                }
+              },
+              "message" : {
+                "text" : "pathname"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 93,
+                  "startColumn" : 13,
+                  "endColumn" : 37
+                }
+              },
+              "message" : {
+                "text" : "process ... athname"
+              }
+            },
+            "taxa" : [ {
+              "id" : "Config",
+              "properties" : {
+                "CodeQL/DataflowRole" : "step"
+              }
+            } ]
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 93,
+                  "startColumn" : 3,
+                  "endColumn" : 10
+                }
+              },
+              "message" : {
+                "text" : "abspath"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 97,
+                  "startColumn" : 16,
+                  "endColumn" : 23
+                }
+              },
+              "message" : {
+                "text" : "abspath"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 72,
+            "startColumn" : 27,
+            "endColumn" : 34
+          }
+        },
+        "message" : {
+          "text" : "user-provided value"
+        }
+      }, {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "node_modules/http-live-simulator/bin/http-live.js",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 72,
+            "startColumn" : 27,
+            "endColumn" : 34
+          }
+        }
+      } ]
+    } ],
+    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarif-latest"
+    }
+  } ]
+}

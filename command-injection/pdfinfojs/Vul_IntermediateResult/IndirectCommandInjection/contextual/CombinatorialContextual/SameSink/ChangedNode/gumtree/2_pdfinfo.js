@@ -1,0 +1,23 @@
+	Command being timed: "/home/sikai/DifferentialAlertAnalysis/thirdParties/gumtree/dist/build/install/gumtree/bin/gumtree textdiff /home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/pdfinfojs/Safe/sourceCode/node_modules/pdfinfojs/lib/pdfinfo.js /home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/pdfinfojs/Vul/sourceCode/node_modules/pdfinfojs/lib/pdfinfo.js -f JSON"
+	User time (seconds): 2.00
+	System time (seconds): 0.36
+	Percent of CPU this job got: 229%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 108944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 33154
+	Voluntary context switches: 7460
+	Involuntary context switches: 13
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 80
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

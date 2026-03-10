@@ -1,0 +1,23 @@
+	Command being timed: "codeql database create /home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/kill-port-process/Safe_IntermediateResult/IndirectCommandInjection/nonContextual/db --language=javascript --source-root=/home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/kill-port-process/Safe/sourceCode --extractor-options-file=/home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/db-builder/builder.yml --threads=1 --overwrite --logdir=/home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/kill-port-process/Safe_IntermediateResult/IndirectCommandInjection/nonContextual/db/../database-creation.log"
+	User time (seconds): 39.66
+	System time (seconds): 3.23
+	Percent of CPU this job got: 389%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 881572
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 7276
+	Minor (reclaiming a frame) page faults: 424607
+	Voluntary context switches: 84162
+	Involuntary context switches: 194
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96920
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
