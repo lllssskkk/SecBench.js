@@ -109,7 +109,7 @@ dist
 **/*_diff.json 
 
 # Vul Version  
-**/Vul_IntermediateResult/
+**/db/
 
 # Safe  
-**/Safe_IntermediateResult/
+**/db/
