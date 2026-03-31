@@ -1,7 +1,8 @@
 {
   "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
   "version" : "2.1.0",
-  "runs" : [ {
+  "runs" : [ 
+    {
     "tool" : {
       "driver" : {
         "name" : "CodeQL",
@@ -183,7 +184,8 @@
         "index" : 1
       }
     } ],
-    "results" : [ {
+    "results" : [ 
+      {
       "ruleId" : "js/prototype-polluting-assignment",
       "ruleIndex" : 0,
       "rule" : {
@@ -7184,7 +7186,7 @@
         }
       } ]
     } ],
-    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "newlineSequences" : [ "\r\n", "\n", "", "" ],
     "columnKind" : "utf16CodeUnits",
     "properties" : {
       "semmle.formatSpecifier" : "sarif-latest"

@@ -1,21 +1,21 @@
-	Command being timed: "/home/sikai/DifferentialAlertAnalysis/thirdParties/gumtree/dist/build/install/gumtree/bin/gumtree textdiff /home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/dns-sync/Safe/sourceCode/node_modules/dns-sync/lib/dns-sync.js /home/sikai/DifferentialAlertAnalysis/SecBench.js/command-injection/dns-sync/Vul/sourceCode/node_modules/dns-sync/lib/dns-sync.js -f JSON"
-	User time (seconds): 1.52
-	System time (seconds): 0.34
-	Percent of CPU this job got: 201%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.92
+	Command being timed: "/home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/gumtree/dist/build/install/gumtree/bin/gumtree textdiff /home/lllssskkk/code/SMM/DifferentialAlertAnalysis/SecBench.js/command-injection/dns-sync/Safe/sourceCode/node_modules/dns-sync/lib/dns-sync.js /home/lllssskkk/code/SMM/DifferentialAlertAnalysis/SecBench.js/command-injection/dns-sync/Vul/sourceCode/node_modules/dns-sync/lib/dns-sync.js -f JSON"
+	User time (seconds): 0.58
+	System time (seconds): 0.08
+	Percent of CPU this job got: 196%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.34
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 97616
+	Maximum resident set size (kbytes): 88900
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 13
-	Minor (reclaiming a frame) page faults: 29188
-	Voluntary context switches: 5911
-	Involuntary context switches: 14
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 27745
+	Voluntary context switches: 5075
+	Involuntary context switches: 55
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 112
+	File system outputs: 80
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0

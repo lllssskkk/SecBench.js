@@ -189,7 +189,8 @@
         "index" : 2
       }
     } ],
-    "results" : [ {
+    "results" : [ 
+      {
       "ruleId" : "js/prototype-polluting-assignment",
       "ruleIndex" : 0,
       "rule" : {
@@ -199,7 +200,8 @@
       "message" : {
         "text" : "This assignment may alter Object.prototype if a malicious  '__proto__' string is injected from [library input](1)."
       },
-      "locations" : [ {
+      "locations" : [ 
+        {
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "node_modules/node-forge/lib/http.js",
@@ -778,7 +780,7 @@
         }
       } ]
     } ],
-    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "newlineSequences" : [ "\r\n", "\n", "", "" ],
     "columnKind" : "utf16CodeUnits",
     "properties" : {
       "semmle.formatSpecifier" : "sarif-latest"

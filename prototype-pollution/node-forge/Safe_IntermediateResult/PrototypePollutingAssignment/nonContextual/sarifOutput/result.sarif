@@ -332,7 +332,7 @@
         }
       } ]
     } ],
-    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "newlineSequences" : [ "\r\n", "\n", "", "" ],
     "columnKind" : "utf16CodeUnits",
     "properties" : {
       "semmle.formatSpecifier" : "sarif-latest"

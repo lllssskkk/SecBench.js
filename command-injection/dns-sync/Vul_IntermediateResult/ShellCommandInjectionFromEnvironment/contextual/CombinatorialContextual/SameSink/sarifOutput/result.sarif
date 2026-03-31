@@ -61,9 +61,9 @@
       },
       "extensions" : [ {
         "name" : "clientside-prototype-pollution",
-        "semanticVersion" : "0.0.0+80947af15c41d20acffaefa76f93ab1eaaa46aa1",
+        "semanticVersion" : "0.0.0+bf3e8d59c20be9d60eb9620901642c36df9ed82e",
         "locations" : [ {
-          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE078/ShellCommandInjectionFromEnvironment.ql/",
+          "uri" : "file:///home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE078/ShellCommandInjectionFromEnvironment.ql/",
           "description" : {
             "text" : "The QL pack root directory."
           },
@@ -71,7 +71,7 @@
             "tags" : [ "CodeQL/LocalPackRoot" ]
           }
         }, {
-          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE078/ShellCommandInjectionFromEnvironment.ql/qlpack.yml",
+          "uri" : "file:///home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-query/CWE078/ShellCommandInjectionFromEnvironment.ql/qlpack.yml",
           "description" : {
             "text" : "The QL pack definition file."
           },
@@ -83,7 +83,7 @@
         "name" : "codeql/javascript-all",
         "semanticVersion" : "2.6.20+c5329f6f3863621c140ea7abd5954860e96c8bf1",
         "locations" : [ {
-          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/",
+          "uri" : "file:///home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/",
           "description" : {
             "text" : "The QL pack root directory."
           },
@@ -91,7 +91,7 @@
             "tags" : [ "CodeQL/LocalPackRoot" ]
           }
         }, {
-          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/qlpack.yml",
+          "uri" : "file:///home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/javascript/ql/lib/qlpack.yml",
           "description" : {
             "text" : "The QL pack definition file."
           },
@@ -103,7 +103,7 @@
         "name" : "codeql/threat-models",
         "semanticVersion" : "1.0.40+c5329f6f3863621c140ea7abd5954860e96c8bf1",
         "locations" : [ {
-          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/",
+          "uri" : "file:///home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/",
           "description" : {
             "text" : "The QL pack root directory."
           },
@@ -111,7 +111,7 @@
             "tags" : [ "CodeQL/LocalPackRoot" ]
           }
         }, {
-          "uri" : "file:///home/sikai/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/qlpack.yml",
+          "uri" : "file:///home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql/shared/threat-models/qlpack.yml",
           "description" : {
             "text" : "The QL pack definition file."
           },
@@ -147,11 +147,11 @@
         }
       }, {
         "message" : {
-          "text" : "On the Linux (amd64; 5.15.0-171-generic) platform.",
-          "markdown" : "On the Linux (amd64; 5.15.0-171-generic) platform."
+          "text" : "On the Linux (amd64; 6.18.17) platform.",
+          "markdown" : "On the Linux (amd64; 6.18.17) platform."
         },
         "level" : "none",
-        "timeUtc" : "2026-03-04T00:39:11.096469582Z",
+        "timeUtc" : "2026-03-26T15:15:46.605255616Z",
         "descriptor" : {
           "id" : "cli/platform",
           "index" : 1
@@ -160,7 +160,7 @@
           "attributes" : {
             "arch" : "amd64",
             "name" : "Linux",
-            "version" : "5.15.0-171-generic"
+            "version" : "6.18.17"
           },
           "visibility" : {
             "statusPage" : false,
@@ -191,7 +191,7 @@
         "index" : 0
       },
       "message" : {
-        "text" : "This shell command depends on an uncontrolled [absolute path](1).\nThis shell command depends on an uncontrolled [absolute path](2)."
+        "text" : "This shell command depends on an uncontrolled [process.execPath](1).\nThis shell command depends on an uncontrolled [__dirname](2)."
       },
       "locations" : [ {
         "physicalLocation" : {
@@ -469,7 +469,7 @@
           }
         },
         "message" : {
-          "text" : "absolute path"
+          "text" : "process.execPath"
         }
       }, {
         "id" : 2,
@@ -486,7 +486,7 @@
           }
         },
         "message" : {
-          "text" : "absolute path"
+          "text" : "__dirname"
         }
       }, {
         "physicalLocation" : {
@@ -516,7 +516,7 @@
         }
       } ]
     } ],
-    "newlineSequences" : [ "\r\n", "\n", " ", " " ],
+    "newlineSequences" : [ "\r\n", "\n", "", "" ],
     "columnKind" : "utf16CodeUnits",
     "properties" : {
       "semmle.formatSpecifier" : "sarif-latest"
