@@ -1,0 +1,23 @@
+	Command being timed: "codeql database analyze /home/lllssskkk/code/SMM/DifferentialAlertAnalysis/SecBench.js/path-traversal/m-server/Vul_IntermediateResult/db /home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/countChangedNodes/CountChangedNodes.ql --format=sarif-latest --max-paths=100 --no-sarif-minify --ram=20480 --rerun -j=0 --output=/home/lllssskkk/code/SMM/DifferentialAlertAnalysis/SecBench.js/path-traversal/m-server/Vul_IntermediateResult/CountChangedNodes/contextual/ConstraintBasedContextual/result.sarif --additional-packs=/home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-related/codeql"
+	User time (seconds): 203.03
+	System time (seconds): 3.47
+	Percent of CPU this job got: 762%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4083224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 56
+	Minor (reclaiming a frame) page faults: 1202174
+	Voluntary context switches: 260133
+	Involuntary context switches: 39343
+	Swaps: 0
+	File system inputs: 1416
+	File system outputs: 49816
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

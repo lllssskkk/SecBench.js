@@ -1,0 +1,23 @@
+	Command being timed: "codeql database create /home/lllssskkk/code/SMM/DifferentialAlertAnalysis/SecBench.js/command-injection/open/Vul_IntermediateResult/db --language=javascript --source-root=/home/lllssskkk/code/SMM/DifferentialAlertAnalysis/SecBench.js/command-injection/open/Vul/sourceCode --extractor-options-file=/home/lllssskkk/code/SMM/DifferentialAlertAnalysis/thirdParties/codeql-related/db-builder/builder.yml --threads=1 --overwrite --logdir=/home/lllssskkk/code/SMM/DifferentialAlertAnalysis/SecBench.js/command-injection/open/Vul_IntermediateResult/db/../database-creation.log"
+	User time (seconds): 16.89
+	System time (seconds): 0.77
+	Percent of CPU this job got: 386%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 562848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 61
+	Minor (reclaiming a frame) page faults: 283080
+	Voluntary context switches: 62050
+	Involuntary context switches: 2597
+	Swaps: 0
+	File system inputs: 1920
+	File system outputs: 83312
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
